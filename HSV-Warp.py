@@ -126,8 +126,9 @@ def ocr(filepath,upper,lower):
     ## Read
     img = cv.imread(filepath)
     
-    #Depends if need to resize smaller
-#    img = cv.resize(img, (0,0), fx=0.2, fy=0.2)
+    #resizing purpose, change the scale to your own desired value if needed
+    if img.shape[0]>1500 or img.shape[1]>1500:
+        img = cv.resize(img, (0,0), fx=0.2, fy=0.2)
     
     ## convert to hsv
     hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
