@@ -9,6 +9,6 @@ $python HSV-Warp.py
 
 Open image.jpg
 
-Select a pixel that covers as much as possible the images of the document
+Select a pixel that covers as much as possible the edges of the document
 
 Press Esc once the range is selected
